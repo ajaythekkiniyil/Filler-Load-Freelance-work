@@ -75,6 +75,27 @@
 
 	<!-- To speed up the rendering and to display the site as fast as possible to the user we include some styles and scripts for above the fold content inline -->
 	<style type="text/css" media="screen">
+
+		.hero-section{
+			background-image: url('./Enfold\ Theme\ Demo\ –\ a\ Kriesi.at\ Theme_files/AdobeStock-2.webp') ;
+			height: 100vh;
+			width: 100%;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.hero-text{
+			margin: 300px 0 0 100px;
+			position: absolute;
+			color: white;
+		}
+		.hero-text .fillerload--text{
+			font-size: 80px;
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		}
+		.hero-text .sub--text{
+			font-size: 28px;
+			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		}
 		#header_main {
 			background: white;
 		}
@@ -1161,7 +1182,31 @@
 			line-height: 16px;
 			text-align: justify !important
 		}
-
+		@media (min-width:2000px){
+			.hero-text {
+				margin: 600px 0 0 331px;
+			}
+		}
+		@media (max-width:768px){
+			.hero-text {
+				margin: 180px 0 0 101px;
+			}
+		}
+		@media (max-width:468px){
+			.hero-section{
+				height: 50vh;
+			}
+			.hero-text {
+					margin: 120px 0 0 34px;
+					line-height: 0px;
+				}
+			.hero-text .fillerload--text{
+				font-size: 40px;
+			}
+			.hero-text .sub--text {
+    			font-size: 20px;
+			}
+		}
 		@media screen and (max-width:767px) {
 
 			.ls-container .ls-layers>.ls-hide-on-phone,
@@ -1170,6 +1215,7 @@
 			.ls-container .ls-background-videos .ls-hide-on-phone iframe {
 				display: none !important
 			}
+			
 		}
 
 		@media screen and (min-width:768px) and (max-width:1024px) {
@@ -1380,7 +1426,9 @@
 
 		</header>
 
-		<div class="">
+
+		<!-- bootstrap carousel -->
+		<!-- <div class="">
 			<style>
 				.carousel .carousel-item:before {
 					content: "";
@@ -1413,7 +1461,6 @@
 					}
 				}
 			</style>
-			<!-- bootstrap carousel -->
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
 					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -1443,8 +1490,15 @@
 					<span class="sr-only">Next</span>
 				</a>
 			</div>
-			<!-- bootstrap carousel -->
-		</div>
+		</div> -->
+		<!-- bootstrap carousel -->
+
+		<section class="hero-section">
+			<div class="hero-text">
+				<p class="fillerload--text">Filler<span style="color: rgb(180, 35, 35);">L</span>oad</p>
+				<p class="sub--text">Right person at the right time...</p>
+			</div>
+		</section>
 
 		<div id="main" class="all_colors ls-overflow-visible" data-scroll-offset="88">
 
@@ -1651,7 +1705,7 @@
 										class="hr hr-invisible   avia-builder-el-12  el_after_av_textblock  el_before_av_portfolio  avia-builder-el-last ">
 										<span class="hr-inner "><span class="hr-inner-style"></span></span>
 									</div>
-									<div id="av-sc-portfolio-1"
+									<!-- <div id="av-sc-portfolio-1"
 										class="grid-sort-container isotope   no_margin-container with-title-container grid-total-odd grid-col-3 grid-links- isotope_activated"
 										data-portfolio-id="1"
 										style="position: relative; height: 330.641px; overflow: visible;">
@@ -1687,7 +1741,36 @@
 													class="animate__animated animate__slideInRight animate__delay-3s animate__repeat-2" />
 											</article>
 										</div>
+									</div> -->
+
+									
+									<div class="continer tablet--image">
+										<!-- <img class="tablet--image" src="./Enfold Theme Demo – a Kriesi.at Theme_files/tablet pc copy.png" alt="" width="100%"> -->
 									</div>
+
+									<style>
+										.tablet--image{
+											background-image: url('./Enfold Theme Demo – a Kriesi.at Theme_files/tablet pc copy.png');
+											width: 100%;
+											height: 60vh;
+											background-size: cover;
+    										background-repeat: no-repeat;
+											background-attachment: fixed;
+										}
+										@media (min-width:2000px){
+											.tablet--image{
+												height: 30vh;
+											}
+										}
+										@media (max-width:465px){
+											.tablet--image{	
+												height: 40vh;
+												background-position-x: -80px;
+											}
+										}
+									</style>
+									
+
 								</div>
 
 							</div>
