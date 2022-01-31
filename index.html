@@ -75,27 +75,30 @@
 
 	<!-- To speed up the rendering and to display the site as fast as possible to the user we include some styles and scripts for above the fold content inline -->
 	<style type="text/css" media="screen">
-
-		.hero-section{
-			background-image: url('./Enfold\ Theme\ Demo\ –\ a\ Kriesi.at\ Theme_files/AdobeStock-2.webp') ;
+		.hero-section {
+			background-image: url('./Enfold\ Theme\ Demo\ –\ a\ Kriesi.at\ Theme_files/AdobeStock-2.webp');
 			height: 100vh;
 			width: 100%;
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
-		.hero-text{
+
+		.hero-text {
 			margin: 300px 0 0 100px;
 			position: absolute;
 			color: white;
 		}
-		.hero-text .fillerload--text{
+
+		.hero-text .fillerload--text {
 			font-size: 80px;
 			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 		}
-		.hero-text .sub--text{
+
+		.hero-text .sub--text {
 			font-size: 28px;
 			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 		}
+
 		#header_main {
 			background: white;
 		}
@@ -1182,31 +1185,47 @@
 			line-height: 16px;
 			text-align: justify !important
 		}
-		@media (min-width:2000px){
+
+		@media (min-width:2000px) {
 			.hero-text {
 				margin: 600px 0 0 331px;
 			}
 		}
-		@media (max-width:768px){
+
+		@media (min-width:769px) and (max-width:1009px) {
+			.hero-section{
+				height: 30vh;
+			}
+		}
+
+		@media (max-width:768px) {
 			.hero-text {
 				margin: 180px 0 0 101px;
 			}
+			.tablet--image{
+				height: 30vh;
+			}
 		}
-		@media (max-width:468px){
-			.hero-section{
+
+		@media (max-width:468px) {
+			.hero-section {
 				height: 40vh;
 			}
+
 			.hero-text {
-					margin: 120px 0 0 34px;
-					line-height: 0px;
-				}
-			.hero-text .fillerload--text{
+				margin: 120px 0 0 34px;
+				line-height: 0px;
+			}
+
+			.hero-text .fillerload--text {
 				font-size: 40px;
 			}
+
 			.hero-text .sub--text {
-    			font-size: 20px;
+				font-size: 20px;
 			}
 		}
+
 		@media screen and (max-width:767px) {
 
 			.ls-container .ls-layers>.ls-hide-on-phone,
@@ -1215,7 +1234,7 @@
 			.ls-container .ls-background-videos .ls-hide-on-phone iframe {
 				display: none !important
 			}
-			
+
 		}
 
 		@media screen and (min-width:768px) and (max-width:1024px) {
@@ -1743,33 +1762,35 @@
 										</div>
 									</div> -->
 
-									
+
 									<div class="continer tablet--image">
 										<!-- <img class="tablet--image" src="./Enfold Theme Demo – a Kriesi.at Theme_files/tablet pc copy.png" alt="" width="100%"> -->
 									</div>
 
 									<style>
-										.tablet--image{
+										.tablet--image {
 											background-image: url('./Enfold Theme Demo – a Kriesi.at Theme_files/tablet pc copy.png');
 											width: 100%;
 											height: 60vh;
 											background-size: cover;
-    										background-repeat: no-repeat;
+											background-repeat: no-repeat;
 											background-attachment: fixed;
 										}
-										@media (min-width:2000px){
-											.tablet--image{
+
+										@media (min-width:2000px) {
+											.tablet--image {
 												height: 30vh;
 											}
 										}
-										@media (max-width:465px){
-											.tablet--image{	
+
+										@media (max-width:465px) {
+											.tablet--image {
 												height: 40vh;
-												background-position-x: -150px;
+												background-position-x: -175px;
 											}
 										}
 									</style>
-									
+
 
 								</div>
 
@@ -2098,11 +2119,13 @@
 					<div class="row mt-4">
 						<div class="col-md-4">
 							<h5 class="pb-3">Find us</h5>
-							<p class="footer-para">	
-								<i class="fas fa-map-marker-alt"></i> &nbsp;859, JMD Megapolis, Sector 48, Gurgaon 122018 <br>
-								<i class="far fa-envelope"></i> <a href="mailto:support@fillerload.com"> &nbsp;support@fillerload.com</a><br>
+							<p class="footer-para">
+								<i class="fas fa-map-marker-alt"></i> &nbsp;859, JMD Megapolis, Sector 48, Gurgaon
+								122018 <br>
+								<i class="far fa-envelope"></i> <a href="mailto:support@fillerload.com">
+									&nbsp;support@fillerload.com</a><br>
 								<i class="fas fa-phone-alt"></i> &nbsp;9289114471, 9289114472
-								
+
 							</p>
 						</div>
 						<div class="col-md-4 pl-3 pl-md-5">
@@ -2123,26 +2146,26 @@
 					<span class="copyright--text">Copyright © 2022 FillerLoad - All Rights Reserved.</span>
 				</div>
 				<style>
-				
-					.footer-para{
+					.footer-para {
 						font-size: 13px;
 					}
-					@media (max-width:425px){
-						footer{
+
+					@media (max-width:425px) {
+						footer {
 							text-align: center !important;
 						}
 					}
-					@media (max-width:320px){
-						.footer-para{
+
+					@media (max-width:320px) {
+						.footer-para {
 							font-size: 11px;
 							display: inline;
 						}
 					}
-					
 				</style>
 			</footer>
 
-			
+
 		</div>
 	</div>
 
